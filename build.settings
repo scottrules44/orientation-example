@@ -1,0 +1,29 @@
+--
+-- For more information on build.settings see the Corona Build Guide at:
+-- http://docs.coronalabs.com/guide/distribution/buildSettings/index.html
+--
+
+settings = 
+{
+    orientation =
+    {
+        default = "portrait",    -- Initial launch orientation
+        supported = {"portrait","landscapeLeft", "landscapeRight"},  -- Table of allowed options for auto-orientation
+    },
+
+	iphone =
+	{
+		xcassets = "Images.xcassets",
+		plist =
+		{
+			UILaunchStoryboardName = "LaunchScreen",
+		},
+	},
+	plugins =
+    {
+        ["plugin.orientation"] =
+        {
+            publisherId = "tech.scotth"
+        },
+    },
+}
